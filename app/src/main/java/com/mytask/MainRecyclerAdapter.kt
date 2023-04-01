@@ -19,8 +19,8 @@ class MainRecyclerAdapter(private val context: Context, private val itemList: Li
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val images = itemList[position]
 
-        pagerAdapter = ViewPagerAdapter(context, images)
-        holder.binding.viewPager.adapter = pagerAdapter
+//        pagerAdapter = ViewPagerAdapter(context, images)
+//        holder.binding.viewPager.adapter = pagerAdapter
 
         holder.binding.viewPager.currentItem = 1
 

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="82dp"
+    android:background="@drawable/seek_background"
+    android:clipChildren="true"
+    android:layout_height="32dp">
+
+<!--    <SeekBar-->
+<!--        android:id="@+id/seekBar"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:max="80"-->
+<!--        android:progress="0"-->
+<!--        android:progressDrawable="@drawable/custom_seek_bar"-->
+<!--        android:splitTrack="false"-->
+<!--        android:thumbTint="@android:color/transparent" />-->
+
+    <View
+        android:id="@+id/seekProgress"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:visibility="gone"
+        android:background="@drawable/seek_progress"/>
+
+    <ImageButton
+        android:id="@+id/ibPlayPause"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_round_play_arrow_24"/>
+</FrameLayout>

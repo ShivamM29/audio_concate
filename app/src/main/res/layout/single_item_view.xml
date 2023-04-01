@@ -18,10 +18,23 @@
 <!--    </LinearLayout>-->
 <!--</HorizontalScrollView>-->
 
-<androidx.viewpager2.widget.ViewPager2
-    android:id="@+id/viewPager"
+<FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_height="82dp"
     android:layout_width="82dp"
-    android:padding="1dp"
-    android:background="@drawable/item_background"/>
+    android:layout_height="82dp">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_height="82dp"
+        android:layout_width="82dp"
+        android:padding="1dp"
+        android:background="@drawable/item_background"/>
+
+    <View
+        android:id="@+id/upView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:alpha="0.2"
+        android:background="?attr/colorSurface"/>
+</FrameLayout>
